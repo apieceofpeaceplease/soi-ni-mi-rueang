@@ -48,6 +48,8 @@ button.go:hover{background:#111;color:#FFE24A}
 .note{background:#FFF3C4;padding:8px 12px;border-left-color:#FFB800}
 html:root[data-theme]{--bg:#FFE24A;--card:#fff;--ink:#111;--mute:#444;--trust:#00C16A;--tense:#FF3B30;--fund:#FFB800;--line:#111;color-scheme:light}
 body,#app{color:#111}
+a.btn{display:block;text-align:center;text-decoration:none;color:#111;background:#fff;border:2px solid #111;border-radius:12px;padding:12px 15px;margin-top:10px;font-family:"Mali","Noto Sans Thai Looped",system-ui,sans-serif;font-weight:700;box-shadow:3px 3px 0 #111}
+a.btn:hover{background:#FFE24A}
 @media (prefers-reduced-motion:reduce){.bar i{transition:none}}
 </style>
 </head>
@@ -107,6 +109,8 @@ a:["เปลี่ยนเรื่องไปคุยเรื่องอ�
 f:["Lederach (2005) The Moral Imagination","สันติภาพถูกสร้างในความสัมพันธ์ประจำวัน โดยคนธรรมดาที่กล้าอยู่กับความซับซ้อน"]}
 ];
 var C=[[`ชวนร้านทำโพสต์ร่วมกัน คุณเล่าประสบการณ์ ร้านเล่าว่าแก้อะไรแล้ว และเชิญคุณกลับไปชิมใหม่`,`ลูกค้าเห็นว่าร้านรับฟัง ร้านได้ภาพลักษณ์ใหม่ คุณได้บริการที่ดีขึ้น`],[`เสนอให้ผู้เช่ารับงานดูแลอาคารหรือช่วยหาผู้เช่าใหม่ เพื่อหักเป็นค่าเช่า และเจ้าของลดค่าเช่าให้ช่วงที่ตกงาน`,`เจ้าของได้คนช่วยดูแลและไม่ต้องหาผู้เช่าใหม่ ผู้เช่ามีรายได้และที่อยู่`],[`ให้น้องใช้ที่ดินทำสวนหรือร้านเล็ก ๆ แบ่งรายได้ให้พี่ทุกปี และเก็บส่วนหนึ่งไว้เป็นพื้นที่ของครอบครัว`,`พี่ได้ส่วนแบ่งต่อเนื่อง น้องได้ดูแลที่ดินพ่อ ทุกคนยังมีที่กลับมา`],[`ตั้งตารางงานบ้านร่วมกัน สลับงานที่ไม่มีใครชอบ และเดือนละครั้งสั่งอาหารหรือจ้างช่วยแทน`,`ต่างฝ่ายได้เลือกงานที่ถนัด งานที่เกลียดแบ่งเท่ากัน และมีเวลาพักมากขึ้น`],[`ชวนเขาทำงานชุดต่อไปด้วยกัน ใส่ชื่อทีมทุกคน และเสนอให้ทุกประชุมมีช่วงให้เครดิตทีม`,`เครดิตเป็นธรรมกับทั้งทีม เพื่อนร่วมงานได้เรียนรู้ คุณมีพื้นที่แสดงผลงานจริง`],[`ตั้งคณะกรรมการร่วมของชุมชนและบริษัท ให้บุคคลที่สามตรวจสิ่งแวดล้อม รับคนท้องถิ่น และแบ่งรายได้ส่วนหนึ่งเข้ากองทุนชุมชน`,`ชุมชนมีส่วนกำกับและได้ประโยชน์ โครงการเดินหน้าด้วยความไว้ใจ`],[`ชวนลูกเขียนข้อตกลงครอบครัวด้วยกัน พ่อแม่วางมือถือเวลาเดียวกับลูก และมีวันที่ลูกได้เล่นยาวกว่าปกติ`,`ลูกรู้สึกถูกเคารพ พ่อแม่เห็นลูกนอนเร็วขึ้น ทั้งบ้านมีเวลาคุณภาพร่วมกัน`],[`เสนอให้ทีมมีธรรมเนียมให้ฟีดแบ็กแบบส่วนตัวก่อน และหัวหน้าขอโทษเรื่องวิธีการ โดยยังคุยเนื้องานต่อได้`,`หัวหน้ารักษามาตรฐานงานได้ ลูกน้องได้รับความเคารพ ทีมได้กติกาที่ดีขึ้น`],[`ชวนทั้งคู่ซ่อมกระเป๋าด้วยกัน คนทำเรียนเย็บ เจ้าของออกแบบลายปะ จนกลายเป็นกระเป๋าใบเดียวในโลก`,`เจ้าของได้กระเป๋าที่มีเรื่องราว คนทำได้รับผิดชอบด้วยตัวเอง ทั้งคู่สนิทกันมากขึ้น`],[`ชวนทุกคนเล่าความทรงจำปีใหม่ที่สำคัญของตัวเองก่อน แล้วนัดคุยเรื่องการเมืองอีกวันตอนใจเย็น พร้อมกติกาว่าฟังให้จบก่อนตอบ`,`โต๊ะผ่านไปอย่างอบอุ่น และเรื่องที่เห็นต่างมีพื้นที่ที่ปลอดภัยกว่าให้คุยกัน`]];D.forEach(function(q,i){q.c=C[i]});var E={w:[1,-2,1],l:[-2,2,-1],a:[-1,1,0],c:[3,-3,3]};
+var CFG={ig:"https://www.instagram.com/apieceofpeaceplease",fb:"https://www.facebook.com/share/1DhF3q6CeQ/",feedback:"",site:""};
+var IMG={c:"logo-conflict.png",p:"logo-peace.png"};
 var st,app=document.getElementById("app");
 function cl(x){return Math.max(0,Math.min(10,x))}
 var IC=['M6 8h28v18H20l-8 7v-7H6z','M6 20L20 7l14 13M10 18v15h20V18M17 33v-9h6v9','M20 34V20M20 6c-8 0-10 12 0 14 10-2 8-14 0-14z','M20 33C6 23 7 11 14 10c3 0 5 2 6 4 1-2 3-4 6-4 7 1 8 13-6 23z','M6 14h28v18H6zM15 14v-4h10v4M6 23h28','M5 33V18l10 6v-6l10 6V10h6v23z','M13 5h14a2 2 0 012 2v26a2 2 0 01-2 2H13a2 2 0 01-2-2V7a2 2 0 012-2zM18 31h4','M6 8h28v18H20l-8 7v-7H6z','M9 14h22l-2 20H11zM15 14c0-6 10-6 10 0','M6 20h28c0 8-6 13-14 13S6 28 6 20zM12 12c2-3 2-5 0-7M20 12c2-3 2-5 0-7'];
@@ -139,13 +143,47 @@ var n=st.n,w=n.w+n.c,t,d,m=Math.max(w,n.l,n.a);
 if(w==m){t="คุณคือสายคุย";d="คุณมักเลือกฟังและถามความต้องการเบื้องหลัง จุดแข็งคือหาทางที่ทุกฝ่ายได้ประโยชน์ สิ่งที่ลองฝึกต่อคือรู้ว่าเมื่อไรควรพักก่อน เมื่ออารมณ์ยังร้อนเกินไป"}
 else if(n.l>=n.a){t="คุณคือสายชนะ";d="คุณมุ่งมั่นและกล้าปกป้องสิ่งที่ต้องการ จุดแข็งคือตัดสินใจเร็ว สิ่งที่ลองฝึกต่อคือถามอีกฝ่ายก่อนว่าเขาต้องการอะไร เพราะการชนะฝ่ายเดียวมักทำให้ความสัมพันธ์เสียหาย"}
 else{t="คุณคือสายหนี";d="คุณรักษาความสงบและไม่อยากให้ใครเจ็บ จุดแข็งคือไม่เติมเชื้อไฟ สิ่งที่ลองฝึกต่อคือกล้าพูดสิ่งที่ค้างในใจ เพราะเรื่องที่ไม่ถูกพูดมักกลับมาเสมอ"}
+var T=n.c>=5?{k:"สายคุย",s:"นักคิดทางออก",c:"#00C16A",d:"คิดนอกกรอบจนทุกฝ่ายยิ้มได้"}:w==m?{k:"สายคุย",s:"นักสร้างสะพาน",c:"#2EC4FF",d:"ฟังก่อน แล้วหาทางที่ทุกฝ่ายได้"}:n.l>=n.a?{k:"สายชนะ",s:"นักปกป้อง",c:"#FF5A36",d:"กล้ายืนหยัด ลองฟังอีกฝ่ายเพิ่ม"}:{k:"สายหนี",s:"นักรักษาความสงบ",c:"#9B5DE5",d:"ใจเย็น ลองพูดสิ่งที่ค้างในใจ"};st.T=T;st.w=w;st.ex=w>=6;
 var ex=w>=6,pz='<svg viewBox="0 0 320 90" role="img" aria-label="ซอยตัน: คุยได้ '+w+' จาก 10 ครั้ง" style="width:100%"><rect x="0" y="40" width="320" height="26" rx="4" fill="#C9D8D3"/>';
 for(var i=0;i<10;i++){var k=st.h[i],c={w:"#7CC8BE",c:"#2A9D8F",l:"#E4572E",a:"#9AA5B8"}[k],ic={w:"",c:"",l:"✖",a:"…"}[k],x=i*27+4;pz+='<rect x="'+x+'" y="44" width="23" height="18" rx="4" fill="'+c+'"/><text x="'+(x+11.5)+'" y="58" font-size="13" text-anchor="middle" fill="#fff">'+ic+'</text><rect x="'+(x+4)+'" y="26" width="15" height="12" rx="2" fill="'+c+'" opacity=".55"/>'}
 pz+='<text x="300" y="62" font-size="30" text-anchor="middle">'+(ex?"🚪":"🧱")+'</text><text x="300" y="82" font-size="11" text-anchor="middle" fill="currentColor">'+(ex?"ทางออก":"ซอยตัน")+'</text>';
 pz+='</svg>';
 var refs=D.map(function(q){return '<li>'+q.f[0]+' ('+q.t+')</li>'}).join("");
-app.innerHTML=meters()+'<div class="card"><h2>'+t+'</h2>'+pz+'<p class="mute">ชนะ '+n.l+' · หนี '+n.a+' · คุย '+w+' (เป็นทางสร้างสรรค์ '+n.c+')</p><p class="mute">ช่องสีเขียวในซอยคือครั้งที่คุณเลือกคุย ถ้าได้ตั้งแต่ 6 ครั้ง ซอยจะเปิดทางออก</p><p>'+d+'</p><div class="lesson"><p>ในชีวิตจริงไม่มีสูตรตายตัว และทางที่ทุกฝ่ายได้ประโยชน์ไม่ได้เกิดขึ้นเสมอ แต่เมื่อมีคนหนึ่งเลือกฟังก่อน ความขัดแย้งก็เปลี่ยนทิศได้ ทุกคนคือชิ้นส่วนหนึ่งของสันติภาพ ไม่ต้องรอเป็นผู้เชี่ยวชาญ</p></div><p>ชวนคุณเป็น peacemaker: ลองฟังใครสักคนให้จบก่อนตอบในสัปดาห์นี้ และมาร่วมวงคุยของ a piece of peace, please</p><button class="go" id="a">เล่นอีกครั้ง</button><details open><summary>เคสจริงจากทั่วโลก (ตรวจกับแหล่งอ้างอิงแล้ว)</summary><ul><li>เกาะโอลันด์ ฟินแลนด์–สวีเดน (1921): ชาวเกาะส่วนใหญ่อยากรวมกับสวีเดน สันนิบาตชาติตัดสินให้เกาะอยู่กับฟินแลนด์ แต่ฟินแลนด์ต้องคุ้มครองภาษาสวีเดน วัฒนธรรม และการปกครองตนเอง และเกาะเป็นเขตปลอดทหาร ไม่ใช่ทุกคนได้ตามที่ขอ แต่ทั้งสองประเทศยอมรับ และเกาะยังปกครองตนเองจนถึงทุกวันนี้ (แหล่งที่มา: กระทรวงการต่างประเทศฟินแลนด์ um.fi, สถานีประธานาธิบดีฟินแลนด์)</li><li>วาจีร์ เคนยา (กลางทศวรรษ 1990): ผู้หญิงกลุ่มเล็กชวนผู้อาวุโสของแต่ละเผ่ามาคุยกัน จนเกิดสภาผู้อาวุโสและคณะกรรมการสันติภาพและการพัฒนาวาจีร์ ที่รวมผู้หญิง ผู้อาวุโส เยาวชน และภาครัฐ ใช้วิธีไกล่เกลี่ยดั้งเดิมของชุมชน ช่วยลดความรุนแรงระหว่างเผ่า (แหล่งที่มา: AFJN, Berkley Center, irenees.net)</li><li>คลองบีเกิล ชิลี–อาร์เจนตินา (1984): สองประเทศเกือบรบกันในปี 1978 แล้วยอมให้สันตะปาปาไกล่เกลี่ยราว 6 ปี สนธิสัญญาสันติภาพและมิตรภาพยกเกาะให้ชิลี และให้สิทธิทางทะเลส่วนใหญ่แก่อาร์เจนตินา ประชามติในอาร์เจนตินาเห็นชอบราว 80% และสนธิสัญญายังมีผลอยู่ (แหล่งที่มา: MIT Cascon, Muzas 2023)</li><li>Mary Parker Follett (เอกสาร Constructive Conflict ปี 1925): ในห้องสมุด คนหนึ่งอยากเปิดหน้าต่าง อีกคนอยากปิด ทางออกคือเปิดหน้าต่างของห้องข้าง ๆ ลมไม่โดนใคร ทั้งคู่ได้สิ่งที่ต้องการจริง</li><li>ข้อตกลงค่ายเดวิด 1978 (กรณีศึกษาในหนังสือ Getting to Yes เล่าแบบย่อ): อียิปต์ต้องการอธิปไตยเหนือไซนาย อิสราเอลต้องการความมั่นคง ทางออกคืออียิปต์ได้ดินแดนคืน และพื้นที่ชายแดนเป็นเขตปลอดทหาร (แหล่งที่มา: Fisher, Ury &amp; Patton, TRANSCEND Media Service)</li></ul></details><details><summary>แหล่งอ้างอิงทางทฤษฎี</summary><ul>'+refs+'</ul><p>ควรอ่านฉบับเต็มของแต่ละแหล่งก่อนนำไปเผยแพร่ต่อ</p></details></div>';
-document.getElementById("a").onclick=start}
+app.innerHTML=meters()+'<div class="card"><h2>คุณคือ '+T.k+' · '+T.s+'</h2>'+pz+'<p class="mute">ชนะ '+n.l+' · หนี '+n.a+' · คุย '+w+' (เป็นทางสร้างสรรค์ '+n.c+')</p><p class="mute">ช่องสีเขียวในซอยคือครั้งที่คุณเลือกคุย ถ้าได้ตั้งแต่ 6 ครั้ง ซอยจะเปิดทางออก</p><p>'+d+'</p><div class="lesson"><p>ในชีวิตจริงไม่มีสูตรตายตัว และทางที่ทุกฝ่ายได้ประโยชน์ไม่ได้เกิดขึ้นเสมอ แต่เมื่อมีคนหนึ่งเลือกฟังก่อน ความขัดแย้งก็เปลี่ยนทิศได้ ทุกคนคือชิ้นส่วนหนึ่งของสันติภาพ ไม่ต้องรอเป็นผู้เชี่ยวชาญ</p></div><p>ชวนคุณเป็น peacemaker: ลองฟังใครสักคนให้จบก่อนตอบในสัปดาห์นี้ และมาร่วมวงคุยของ a piece of peace, please</p><h3 style="font-family:Mali,sans-serif;margin:18px 0 6px">การ์ดผลของคุณ</h3><img id="cardimg" alt="การ์ดผลของฉัน" style="width:100%;border:3px solid #111;border-radius:8px"><button class="go" id="sh">แชร์การ์ดนี้</button>'+extras()+'<button class="go" id="a">เล่นอีกครั้ง</button><details open><summary>เคสจริงจากทั่วโลก (ตรวจกับแหล่งอ้างอิงแล้ว)</summary><ul><li>เกาะโอลันด์ ฟินแลนด์–สวีเดน (1921): ชาวเกาะส่วนใหญ่อยากรวมกับสวีเดน สันนิบาตชาติตัดสินให้เกาะอยู่กับฟินแลนด์ แต่ฟินแลนด์ต้องคุ้มครองภาษาสวีเดน วัฒนธรรม และการปกครองตนเอง และเกาะเป็นเขตปลอดทหาร ไม่ใช่ทุกคนได้ตามที่ขอ แต่ทั้งสองประเทศยอมรับ และเกาะยังปกครองตนเองจนถึงทุกวันนี้ (แหล่งที่มา: กระทรวงการต่างประเทศฟินแลนด์ um.fi, สถานีประธานาธิบดีฟินแลนด์)</li><li>วาจีร์ เคนยา (กลางทศวรรษ 1990): ผู้หญิงกลุ่มเล็กชวนผู้อาวุโสของแต่ละเผ่ามาคุยกัน จนเกิดสภาผู้อาวุโสและคณะกรรมการสันติภาพและการพัฒนาวาจีร์ ที่รวมผู้หญิง ผู้อาวุโส เยาวชน และภาครัฐ ใช้วิธีไกล่เกลี่ยดั้งเดิมของชุมชน ช่วยลดความรุนแรงระหว่างเผ่า (แหล่งที่มา: AFJN, Berkley Center, irenees.net)</li><li>คลองบีเกิล ชิลี–อาร์เจนตินา (1984): สองประเทศเกือบรบกันในปี 1978 แล้วยอมให้สันตะปาปาไกล่เกลี่ยราว 6 ปี สนธิสัญญาสันติภาพและมิตรภาพยกเกาะให้ชิลี และให้สิทธิทางทะเลส่วนใหญ่แก่อาร์เจนตินา ประชามติในอาร์เจนตินาเห็นชอบราว 80% และสนธิสัญญายังมีผลอยู่ (แหล่งที่มา: MIT Cascon, Muzas 2023)</li><li>Mary Parker Follett (เอกสาร Constructive Conflict ปี 1925): ในห้องสมุด คนหนึ่งอยากเปิดหน้าต่าง อีกคนอยากปิด ทางออกคือเปิดหน้าต่างของห้องข้าง ๆ ลมไม่โดนใคร ทั้งคู่ได้สิ่งที่ต้องการจริง</li><li>ข้อตกลงค่ายเดวิด 1978 (กรณีศึกษาในหนังสือ Getting to Yes เล่าแบบย่อ): อียิปต์ต้องการอธิปไตยเหนือไซนาย อิสราเอลต้องการความมั่นคง ทางออกคืออียิปต์ได้ดินแดนคืน และพื้นที่ชายแดนเป็นเขตปลอดทหาร (แหล่งที่มา: Fisher, Ury &amp; Patton, TRANSCEND Media Service)</li></ul></details><details><summary>แหล่งอ้างอิงทางทฤษฎี</summary><ul>'+refs+'</ul><p>ควรอ่านฉบับเต็มของแต่ละแหล่งก่อนนำไปเผยแพร่ต่อ</p></details></div>';
+document.getElementById("a").onclick=start;document.getElementById("sh").onclick=shareCard;makeCard(function(cv){var im=document.getElementById("cardimg");try{im.src=cv.toDataURL()}catch(e){im.style.display="none"}})}
+function extras(){var h="";
+if(CFG.ig||CFG.fb){h+='<div class="note"><b>ชอบเกมนี้? ติดตาม a piece of peace, please</b></div>';
+if(CFG.ig)h+='<a class="btn" href="'+CFG.ig+'" target="_blank" rel="noopener">ติดตามบน Instagram</a>';
+if(CFG.fb)h+='<a class="btn" href="'+CFG.fb+'" target="_blank" rel="noopener">ติดตามบน Facebook</a>'}
+if(CFG.feedback)h+='<div class="note"><b>เล่นแล้วรู้สึกอย่างไร?</b><br>บอกเราหน่อยว่าอะไรช่วยได้ อะไรควรปรับ</div><a class="btn" href="'+CFG.feedback+'" target="_blank" rel="noopener">ให้ฟีดแบ็ก 1 นาที</a>';
+return h}
+function makeCard(cb){var T=st.T,n=st.n,W=1080,H=1350;
+function load(u){return new Promise(function(r){var i=new Image();i.onload=function(){r(i)};i.onerror=function(){r(null)};i.src=u})}
+Promise.all([document.fonts&&document.fonts.load?document.fonts.load("700 80px Mali").catch(function(){}):0,load(IMG.c),load(IMG.p)]).then(function(R){
+var cv=document.createElement("canvas");cv.width=W;cv.height=H;var g=cv.getContext("2d");
+g.fillStyle="#FFE24A";g.fillRect(0,0,W,H);
+[[0,0,420,"#FF5A36"],[W,220,340,"#2EC4FF"],[0,H,420,"#34C759"],[W,H,320,"#9B5DE5"]].forEach(function(b){g.fillStyle=b[3];g.beginPath();g.arc(b[0],b[1],b[2],0,7);g.fill()});
+g.fillStyle="rgba(0,0,0,.22)";for(var y=7;y<H;y+=14)for(var x=7;x<W;x+=14){g.beginPath();g.arc(x,y,2.2,0,7);g.fill()}
+g.fillStyle="#fff";g.strokeStyle="#111";g.lineWidth=6;g.beginPath();(g.roundRect||g.rect).call(g,60,60,960,1230,16);g.fill();g.stroke();
+g.textAlign="center";
+function F(z,w){g.font=(w||700)+" "+z+"px Mali,'Noto Sans Thai Looped',sans-serif"}
+if(R[1])g.drawImage(R[1],330,100,420,210);
+g.fillStyle="#111";F(40,500);g.fillText("ผลของฉันในเกม ซอยนี้มีเรื่อง",540,380);
+g.fillStyle=T.c;g.beginPath();(g.roundRect||g.rect).call(g,140,420,800,260,30);g.fill();g.stroke();
+g.fillStyle="#111";F(150);g.fillText(T.k,540,560);F(64);g.fillText(T.s,540,650);
+F(36,500);g.fillText(T.d,540,735);
+var cs={w:"#7CC8BE",c:"#00C16A",l:"#FF5A36",a:"#9AA5B8"};
+g.lineWidth=4;for(var i=0;i<10;i++){g.fillStyle=cs[st.h[i]];g.beginPath();g.rect(120+i*84,800,74,56);g.fill();g.stroke()}
+g.fillStyle="#111";F(40,500);g.fillText(st.ex?"ซอยเปิดทางออก":"ซอยยังตันอยู่",540,925);
+F(44);g.fillText("ชนะ "+n.l+" · หนี "+n.a+" · คุย "+st.w,540,995);
+if(R[2])g.drawImage(R[2],390,1030,300,Math.round(300*R[2].height/R[2].width));
+F(32,500);g.fillText("by a piece of peace, please",540,1235);
+if(CFG.site){F(28,500);g.fillText(CFG.site,540,1272)}
+cb(cv)})}
+function shareCard(){makeCard(function(cv){var T=st.T,txt="ฉันเป็น"+T.k+" ("+T.s+") ในเกม ซอยนี้มีเรื่อง"+(CFG.site?" "+CFG.site:"");
+try{cv.toBlob(function(b){var f=new File([b],"peacemaker.png",{type:"image/png"});
+if(navigator.canShare&&navigator.canShare({files:[f]})){navigator.share({files:[f],text:txt}).catch(function(){})}
+else{var a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="peacemaker.png";document.body.appendChild(a);a.click();a.remove()}})}catch(e){alert("บันทึกรูปไม่สำเร็จ ลองกดค้างที่การ์ดเพื่อบันทึกรูป")}})}
 start();
 </script>
 </body>
