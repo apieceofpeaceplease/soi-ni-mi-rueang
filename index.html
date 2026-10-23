@@ -163,26 +163,27 @@ if(CFG.feedback)h+='<div class="note"><b>เล่นแล้วรู้สึ
 return h}
 function makeCard(cb){var T=st.T,n=st.n,W=1080,H=1350;
 function load(u){return new Promise(function(r){var i=new Image();i.crossOrigin="anonymous";i.onload=function(){r(i)};i.onerror=function(){r(null)};i.src=u})}
-Promise.all([document.fonts&&document.fonts.load?document.fonts.load("700 80px Mali").catch(function(){}):0,load(IMG.c),load(IMG.p)]).then(function(R){
+Promise.all([document.fonts&&document.fonts.load?Promise.all([document.fonts.load("700 80px Mali","Aa ก สายคุย"),document.fonts.load("500 40px Mali","Aa ก สายคุย")]).then(function(){return document.fonts.ready}).catch(function(){}):0,load(IMG.c),load(IMG.p)]).then(function(R){
 var cv=document.createElement("canvas");cv.width=W;cv.height=H;var g=cv.getContext("2d");
 g.fillStyle="#FFE24A";g.fillRect(0,0,W,H);
 [[0,0,420,"#FF5A36"],[W,220,340,"#2EC4FF"],[0,H,420,"#34C759"],[W,H,320,"#9B5DE5"]].forEach(function(b){g.fillStyle=b[3];g.beginPath();g.arc(b[0],b[1],b[2],0,7);g.fill()});
 g.fillStyle="rgba(0,0,0,.22)";for(var y=7;y<H;y+=14)for(var x=7;x<W;x+=14){g.beginPath();g.arc(x,y,2.2,0,7);g.fill()}
 g.fillStyle="#fff";g.strokeStyle="#111";g.lineWidth=6;g.beginPath();(g.roundRect||g.rect).call(g,60,60,960,1230,16);g.fill();g.stroke();
 g.textAlign="center";
-function F(z,w){g.font=(w||700)+" "+z+"px Mali,'Noto Sans Thai Looped',sans-serif"}
+function F(z,w){g.font=(w||700)+" "+z+"px Mali,'Noto Sans Thai Looped',sans-serif";g.sz=z}
+function C(t,y){g.textAlign="left";var w=g.measureText(t).width;if(!w)w=t.length*(g.sz||40)*.5;g.fillText(t,540-w/2,y)}
 if(R[1])g.drawImage(R[1],330,100,420,210);
-g.fillStyle="#111";F(40,500);g.fillText("ผลของฉันในเกม ซอยนี้มีเรื่อง",540,380);
-g.fillStyle=T.c;g.beginPath();(g.roundRect||g.rect).call(g,140,420,800,260,30);g.fill();g.stroke();
-g.fillStyle="#111";F(150);g.fillText(T.k,540,560);F(64);g.fillText(T.s,540,650);
-F(36,500);g.fillText(T.d,540,735);
+g.fillStyle="#111";F(40,500);C("ผลของฉันในเกม ซอยนี้มีเรื่อง",380);
+g.fillStyle=T.c;g.beginPath();(g.roundRect||g.rect).call(g,140,405,800,300,30);g.fill();g.stroke();
+g.fillStyle="#111";F(150);C(T.k,545);F(64);C(T.s,672);
+F(36,500);C(T.d,765);
 var cs={w:"#7CC8BE",c:"#00C16A",l:"#FF5A36",a:"#9AA5B8"};
 g.lineWidth=4;for(var i=0;i<10;i++){g.fillStyle=cs[st.h[i]];g.beginPath();g.rect(120+i*84,800,74,56);g.fill();g.stroke()}
-g.fillStyle="#111";F(40,500);g.fillText(st.ex?"ซอยเปิดทางออก":"ซอยยังตันอยู่",540,925);
-F(44);g.fillText("ชนะ "+n.l+" · หนี "+n.a+" · คุย "+st.w,540,995);
+g.fillStyle="#111";F(40,500);C(st.ex?"ซอยเปิดทางออก":"ซอยยังตันอยู่",925);
+F(44);C("ชนะ "+n.l+" · หนี "+n.a+" · คุย "+st.w,995);
 if(R[2])g.drawImage(R[2],390,1030,300,Math.round(300*R[2].height/R[2].width));
-F(32,500);g.fillText("by a piece of peace, please",540,1235);
-var su=siteUrl().replace(/^https?:\/\//,"");if(su){F(30,500);g.fillText(su,540,1272)}
+F(32,500);C("by a piece of peace, please",1235);
+var su=siteUrl().replace(/^https?:\/\//,"");if(su){F(30,500);C(su,1272)}
 cb(cv)}).catch(function(){cb(null)})}
 function shareCard(){makeCard(function(cv){if(!cv){alert("สร้างการ์ดไม่สำเร็จ ลองแคปหน้าจอแทน");return}var T=st.T,txt="ฉันเป็น"+T.k+" ("+T.s+") ในเกม ซอยนี้มีเรื่อง"+(siteUrl()?" "+siteUrl():"");
 try{cv.toBlob(function(b){var f=new File([b],"peacemaker.png",{type:"image/png"});
