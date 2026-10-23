@@ -23,7 +23,7 @@ p{margin:0 0 12px}
 .bar i{display:block;height:100%;transition:width .5s}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
 button{font:inherit;color:inherit;text-align:left;width:100%;margin-top:10px;padding:13px 15px;border-radius:12px;border:2px solid var(--ink);background:transparent;cursor:pointer;min-height:48px}
-button:hover{background:var(--ink);color:var(--bg)}
+@media (hover:hover){button:hover{background:var(--ink);color:var(--bg)}}
 button:focus-visible{outline:3px solid var(--fund);outline-offset:2px}
 button.go{background:var(--ink);color:var(--bg);text-align:center;font-weight:600}
 .lesson{border-left:5px solid var(--trust);padding:4px 0 4px 12px;margin:14px 0}
@@ -43,13 +43,15 @@ h1,h2,.tag,button,summary{font-family:"Mali","Noto Sans Thai Looped",system-ui,s
 .bar{height:14px;border:2px solid #111;background:#fff}
 button{background:#fff;border:2px solid #111}
 button.go{background:#FF4F9A;color:#111;box-shadow:3px 3px 0 #111}
-button.go:hover{background:#111;color:#FFE24A}
+@media (hover:hover){button.go:hover{background:#111;color:#FFE24A}}
+button:active{background:#FFE24A;color:#111}
+button.go:active{background:#111;color:#FFE24A}
 .lesson{background:#E3FBEF;padding:8px 12px;border-left-color:#00C16A}
 .note{background:#FFF3C4;padding:8px 12px;border-left-color:#FFB800}
 html:root[data-theme]{--bg:#FFE24A;--card:#fff;--ink:#111;--mute:#444;--trust:#00C16A;--tense:#FF3B30;--fund:#FFB800;--line:#111;color-scheme:light}
 body,#app{color:#111}
 a.btn{display:block;text-align:center;text-decoration:none;color:#111;background:#fff;border:2px solid #111;border-radius:12px;padding:12px 15px;margin-top:10px;font-family:"Mali","Noto Sans Thai Looped",system-ui,sans-serif;font-weight:700;box-shadow:3px 3px 0 #111}
-a.btn:hover{background:#FFE24A}
+@media (hover:hover){a.btn:hover{background:#FFE24A}}
 @media (prefers-reduced-motion:reduce){.bar i{transition:none}}
 </style>
 </head>
